@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b31">
+<title>BROTHER 11 | Under 18 Tournament 2027</title>
+<style>
+:root{--navy:#101b31;--navy2:#172743;--gold:#f5bd45;--ink:#182338;--muted:#667085;--line:#e7eaf0;--bg:#f3f5f9;--green:#137a4b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}
+.hero{background:radial-gradient(circle at 85% 15%,#2c456f 0,transparent 34%),linear-gradient(135deg,var(--navy),#1b2c49);color:white;padding:36px 18px 54px}
+.wrap{max-width:900px;margin:auto}.top{display:flex;align-items:center;gap:12px}.ball{width:46px;height:46px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:var(--navy);font-size:24px}
+.eyebrow{color:#f8cf78;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(27px,5vw,44px);line-height:1.05;margin:22px 0 10px;max-width:720px}.hero p{margin:0;color:#d8e1f0}.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.pill{border:1px solid #52617a;border-radius:30px;padding:8px 12px;font-size:13px;color:#f6f7fa}
+main{max-width:900px;margin:-28px auto 50px;padding:0 16px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:clamp(18px,4vw,30px);box-shadow:0 12px 35px #14213b12;margin-bottom:16px}
+.section-title{font-size:18px;margin:0 0 5px}.sub{color:var(--muted);font-size:13px;margin:0 0 20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.wide{grid-column:1/-1}label{font-size:13px;font-weight:700}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d9deea;border-radius:10px;background:#fff;font:inherit;font-size:14px;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:#d79a23;box-shadow:0 0 0 3px #f5bd452b}.hint{font-size:11px;color:var(--muted);line-height:1.5}.fee{display:flex;align-items:center;justify-content:space-between;background:#fff8e8;border:1px solid #f4dfb2;border-radius:13px;padding:16px}.fee strong{font-size:27px;color:#8b5a00}.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}.choice{border:1px solid var(--line);border-radius:12px;padding:13px;display:flex;gap:9px;align-items:flex-start;cursor:pointer}.choice input{width:auto;margin-top:3px;accent-color:#b67a13}.choice b{display:block;font-size:14px}.choice small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.notice{background:#f2f6fc;border:1px solid #dce6f4;padding:13px;border-radius:11px;font-size:12px;color:#44516a;line-height:1.6}.warning{background:#fff7e9;border-color:#f2dfb9;color:#76551a}
+.btn{border:0;border-radius:12px;background:var(--gold);color:#1c2433;padding:15px 20px;font-weight:850;font-size:15px;width:100%;cursor:pointer}.btn:hover{filter:brightness(.97)}.btn:disabled{opacity:.55;cursor:not-allowed}.check{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:#4b5565;line-height:1.5}.check input{width:auto;margin-top:3px}
+#success{display:none;text-align:center}.tick{width:56px;height:56px;border-radius:50%;background:#e7f7ee;color:var(--green);display:grid;place-items:center;font-size:28px;margin:0 auto 12px}.ref{font-size:22px;font-weight:900;letter-spacing:1px;color:var(--navy)}footer{text-align:center;color:#7b8495;font-size:12px;padding:10px 20px 35px}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.choices{grid-template-columns:1fr}.hero{padding-top:26px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <div class="top"><div class="ball">🏏</div><div><div class="eyebrow">Official Player Registration</div><div style="font-weight:800">BROTHER 11</div></div></div>
+  <h1>UNDER 18<br>TOURNAMENT 2027</h1>
+  <p>Step onto the pitch. Show your talent. Be part of the game.</p>
+  <div class="pills"><span class="pill">🏆 Season 2027</span><span class="pill">👥 Under 18 Players</span><span class="pill">₹350 Registration</span></div>
+</div></header>
+<main>
+<form id="regForm">
+  <section class="card">
+    <h2 class="section-title">Player information</h2><p class="sub">Enter the player's details carefully.</p>
+    <div class="grid">
+      <div class="field"><label for="name">Player full name *</label><input id="name" name="name" required maxlength="70" placeholder="As per ID / school record"></div>
+      <div class="field"><label for="phone">Mobile number *</label><input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" required placeholder="10-digit mobile number"></div>
+      <div class="field"><label for="dob">Date of birth *</label><input id="dob" name="dob" type="date" required></div>
+      <div class="field"><label for="age">Age *</label><input id="age" name="age" type="number" min="5" max="17" required placeholder="Age in completed years"></div>
+      <div class="field"><label for="village">Village / Town *</label><input id="village" name="village" required placeholder="Enter village or town"></div>
+      <div class="field"><label for="district">District *</label><input id="district" name="district" required placeholder="Enter district"></div>
+      <div class="field"><label for="role">Playing role *</label><select id="role" name="role" required><option value="">Select role</option><option>Batsman</option><option>Bowler</option><option>All-rounder</option><option>Wicket Keeper</option></select></div>
+      <div class="field"><label for="batting">Batting style</label><select id="batting" name="batting"><option value="">Select</option><option>Right Hand</option><option>Left Hand</option></select></div>
+      <div class="field"><label for="bowling">Bowling style</label><select id="bowling" name="bowling"><option value="">Select</option><option>Right-arm Fast</option><option>Left-arm Fast</option><option>Right-arm Medium</option><option>Left-arm Medium</option><option>Right-arm Spin</option><option>Left-arm Spin</option><option>Do not bowl</option></select></div>
+      <div class="field"><label for="jersey">Preferred jersey number (optional)</label><input id="jersey" name="jersey" type="number" min="1" max="99" placeholder="1–99"></div>
+      <div class="field wide"><label for="guardian">Parent / guardian name *</label><input id="guardian" name="guardian" required placeholder="Required for Under 18 registration"></div>
+      <div class="field"><label for="guardianPhone">Parent / guardian mobile *</label><input id="guardianPhone" name="guardianPhone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" required placeholder="10-digit mobile number"></div>
+      <div class="field"><label for="team">Team / club name (optional)</label><input id="team" name="team" placeholder="If applicable"></div>
+    </div>
+  </section>
+  <section class="card">
+    <h2 class="section-title">Registration fee</h2><p class="sub">One-time player registration charge.</p>
+    <div class="fee"><div><b>Registration Fee</b><div class="hint">BROTHER 11 UNDER 18 TOURNAMENT 2027</div></div><strong>₹350</strong></div>
+    <div style="height:18px"></div>
+    <label>Choose payment method *</label>
+    <div class="choices" style="margin-top:9px">
+      <label class="choice"><input type="radio" name="payment" value="UPI" required><span><b>UPI payment</b><small>Pay using your UPI app. Organizer UPI ID / QR must be added before publishing.</small></span></label>
+      <label class="choice"><input type="radio" name="payment" value="Cash" required><span><b>Cash payment</b><small>Pay the tournament organizer directly.</small></span></label>
+    </div>
+    <div class="grid" style="margin-top:16px">
+      <div class="field"><label for="txn">UPI transaction ID (if paid online)</label><input id="txn" name="txn" placeholder="Enter UPI reference / UTR number"></div>
+      <div class="field"><label for="paidTo">Cash received by (if paid cash)</label><input id="paidTo" name="paidTo" placeholder="Organizer / collector name"></div>
+      <div class="field wide"><label for="proof">Payment screenshot (optional)</label><input id="proof" name="proof" type="file" accept="image/*"><span class="hint">This demo form does not upload files to a server.</span></div>
+    </div>
+    <div class="notice warning" style="margin-top:16px"><b>Payment status:</b> Submitting this form does not automatically confirm payment. The organizer must verify UPI payment or receive cash and then mark the registration as PAID.</div>
+  </section>
+  <section class="card">
+    <h2 class="section-title">Declaration & submit</h2><p class="sub">Please check the details before submitting.</p>
+    <label class="check"><input type="checkbox" id="consent" required><span>I confirm that the information is correct. I understand this is an Under 18 tournament and my parent / guardian is aware of this registration. I agree that my registration is subject to organizer verification.</span></label>
+    <div style="height:18px"></div>
+    <button class="btn" type="submit">Submit Player Registration →</button>
+    <p class="hint" style="text-align:center;margin:12px 0 0">Demo preview only — registrations are not sent to tournament organizers yet.</p>
+  </section>
+</form>
+<section class="card" id="success">
+  <div class="tick">✓</div><h2>Registration preview created</h2><p class="sub">Your details have been prepared on this device.</p>
+  <div class="ref" id="ref"></div><p class="hint">Save this reference for your records. This is not an official confirmation of registration or payment.</p>
+  <button class="btn" id="download" type="button">Download registration details</button>
+</section>
+</main>
+<footer>© 2027 BROTHER 11 UNDER 18 TOURNAMENT · Play fair. Play strong.</footer>
+<script>
+const dob=document.getElementById('dob');
+const today=new Date(); dob.max=today.toISOString().slice(0,10);
+dob.addEventListener('change',()=>{if(!dob.value)return;const d=new Date(dob.value+'T00:00:00');let a=today.getFullYear()-d.getFullYear();const m=today.getMonth()-d.getMonth();if(m<0||(m===0&&today.getDate()<d.getDate()))a--;document.getElementById('age').value=a;});
+let latest='';
+document.getElementById('regForm').addEventListener('submit',e=>{
+ e.preventDefault();if(!e.target.reportValidity())return;
+ const data=Object.fromEntries(new FormData(e.target).entries());delete data.proof;
+ if(Number(data.age)>17){alert('This tournament is for Under 18 players only.');return;}
+ if(data.payment==='UPI'&&!data.txn.trim()){if(!confirm('UPI transaction ID is blank. Continue as payment pending?'))return;}
+ if(data.payment==='Cash'&&!data.paidTo.trim()){if(!confirm('Cash receiver name is blank. Continue as payment pending?'))return;}
+ const id='B11U18-2027-'+Math.random().toString(36).slice(2,8).toUpperCase();
+ data.registrationReference=id;data.registrationFee='INR 350';data.paymentStatus='PENDING ORGANIZER VERIFICATION';data.submittedAt=new Date().toLocaleString();
+ latest=JSON.stringify(data,null,2);document.getElementById('ref').textContent=id;
+ document.getElementById('regForm').style.display='none';document.getElementById('success').style.display='block';window.scrollTo({top:0,behavior:'smooth'});
+});
+document.getElementById('download').addEventListener('click',()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([latest],{type:'application/json'}));a.download='BROTHER11-registration-preview.json';a.click();URL.revokeObjectURL(a.href);});
+</script>
+</body></html>
